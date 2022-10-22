@@ -7,7 +7,7 @@ def palindrome(s):
     if(len(s) < 3):
         return s
     covertStr = ''.join([x.lower() for x in s if x.isalpha()])
-    #transform to lower case and cutting all puntuation marks.
+    #transform to lower case and cutting all punctuation marks.
     resultStr = ''
     halfStr = len(s)//2 + 1 #half string
     for mainStr in range(1,halfStr):

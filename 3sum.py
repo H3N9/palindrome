@@ -8,11 +8,13 @@ def threeSum(nums):
         k = len(nums) - 1
         while(j < k):
             sum = nums[i] + nums[j] + nums[k]
+            print(nums[i] , nums[j] , nums[k])
             if sum == 0:
-                result.append([nums[i], nums[j], nums[k]])
-                j += 1
+                a = [nums[i], nums[j], nums[k]]
+                if a not in result:
+                    result.append(a)
                 k -= 1
-            elif sum > 0:
+            elif sum < 0:
                 j += 1
             else:
                 k -= 1
